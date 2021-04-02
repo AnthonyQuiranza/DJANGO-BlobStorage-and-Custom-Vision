@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %} Anthony Quiranza {% endblock %}
+
+{% block content %}
+
+
+    
+<div class="card position-absolute top-50 start-50 translate-middle" style="width: 25rem; height:auto">
+    <div class="card-body">
+    <form action="/resultado/" method="GET">
+        <div class="row g-2 align-items-center">
+        <div class="col">
+            <h5 class="card-title">Nombre de la imagen</h5>
+        </div>
+        <div class="col">
+        <input class="form-control" type="text" name="namefile" required>
+        </div>
+        </div>
+        <div class="row g-2 align-items-center">
+            <div class="col">
+                <h5 class="card-title">Enlace</h5>
+            </div>
+            <div class="col">
+        <input class="form-control" type="text" name="link" required>
+    </div>
+    </div>
+    <div class="col">
+            <button type="submit" class="btn btn-primary">Enviar</button> 
+        </div> 
+    </form>
+</div>
+    </div>    
+
+
+    {% endblock %}
